@@ -16,15 +16,25 @@ public class Actividad_inicial {
 
         System.out.println("Hola " + nombre + ", bienvenido a " + curso + ".");
 
-        System.out.println("Introduce un número:");
-        int num1 = entrada.nextInt();
+        int num1 = 0;
+        int num2 = 0;
 
-        System.out.println("Introduce otro número:");
-        int num2 = entrada.nextInt();
+        while(num1==0 || num2==0){
+
+            System.out.println("Introduce un número:");
+            num1 = entrada.nextInt();
+
+            System.out.println("Introduce otro número:");
+            num2 = entrada.nextInt();
+
+            if (num1==0 || num2==0) {
+                System.out.println("ERROR. Un sumando no puede ser 0.");
+            }
+        }
 
         int resultado = num1 + num2;
-
         System.out.println("El resultado de la suma es: " + resultado);
+
 
     }
 
