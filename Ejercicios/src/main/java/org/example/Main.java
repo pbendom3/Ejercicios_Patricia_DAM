@@ -10,8 +10,15 @@ public class Main {
 //            Actividad_inicial actividad_inicial = new Actividad_inicial();
 //            actividad_inicial.ejecutar();
 
-        Ejercicio1 ejercicio1 = new Ejercicio1();
-        ejercicio1.ejercicio();
+//        Ejercicio1 ejercicio1 = new Ejercicio1();
+//        ejercicio1.ejercicio();
+
+        Operadores operadores = new Operadores();
+
+        //operadores.operadores();
+        //operadores.asignacion();
+        //operadores.comparacion();
+        operadores.logicos();
 
     }
 }
