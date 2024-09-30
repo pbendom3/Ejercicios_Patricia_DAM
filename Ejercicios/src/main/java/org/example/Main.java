@@ -9,8 +9,8 @@ public class Main {
 //            actividad_inicial.ejecutar();
 
         Ejercicios ejercicios = new Ejercicios();
-        ejercicios.ejercicio2();
-
+       // ejercicios.ejercicio2();
+        ejercicios.ejemplo_trycatch();
        // Operadores operadores = new Operadores();
 
         //operadores.operadores();

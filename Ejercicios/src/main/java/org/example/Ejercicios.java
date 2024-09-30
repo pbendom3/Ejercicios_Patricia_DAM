@@ -75,6 +75,27 @@ public class Ejercicios {
 
     }
 
+    public void ejemplo_trycatch(){
+
+        Scanner teclado = new Scanner(System.in);
+        int numero = 0;
+        boolean e = true;
+
+        while(e==true){
+            try {
+                System.out.println("Introduce un número...");
+                numero = teclado.nextInt();
+                System.out.println("El número es "+ numero);
+                e = false;
+            }catch (InputMismatchException err){
+                System.out.println("ERROR. El valor indicado no es correcto.");
+                teclado.nextLine();
+            }
+        }
+
+        System.out.println("número..." + numero);
+    }
+
 
 
 }
