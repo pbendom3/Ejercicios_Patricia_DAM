@@ -8,15 +8,18 @@ public class Main {
 //            Actividad_inicial actividad_inicial = new Actividad_inicial();
 //            actividad_inicial.ejecutar();
 
-        Ejercicios ejercicios = new Ejercicios();
+       // Ejercicios ejercicios = new Ejercicios();
        // ejercicios.ejercicio2();
-        ejercicios.ejemplo_trycatch();
+        //ejercicios.ejemplo_trycatch();
        // Operadores operadores = new Operadores();
 
         //operadores.operadores();
         //operadores.asignacion();
         //operadores.comparacion();
       //  operadores.logicos();
+
+        CosasString caracteres = new CosasString();
+        caracteres.caracteres();
 
     }
 }
