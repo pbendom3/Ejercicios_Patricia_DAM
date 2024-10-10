@@ -18,8 +18,14 @@ public class Main {
         //operadores.comparacion();
       //  operadores.logicos();
 
-        CosasString caracteres = new CosasString();
-        caracteres.caracteres();
+        //CosasString caracteres = new CosasString();
+        //caracteres.caracteres();
+
+        //Ejercicio4 ejercicio4 = new Ejercicio4();
+        //ejercicio4.caracteres();
+
+        Ejercicio5 ejercicio5 = new Ejercicio5();
+        ejercicio5.Ejercicio5();
 
     }
 }
