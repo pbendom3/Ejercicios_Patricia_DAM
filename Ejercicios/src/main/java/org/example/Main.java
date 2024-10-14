@@ -27,8 +27,11 @@ public class Main {
 //        Ejercicio5 ejercicio5 = new Ejercicio5();
 //        ejercicio5.Ejercicio5();
 
-        Actividad_excepciones excepciones = new Actividad_excepciones();
-        excepciones.excepciones();
+//        Actividad_excepciones excepciones = new Actividad_excepciones();
+//        excepciones.excepciones();
+
+        Excepciones excepciones = new Excepciones();
+        excepciones.actividad();
 
     }
 }
