@@ -68,48 +68,93 @@ public class Excepciones {
         boolean error = false ;
 
 
-        if (modo.equals("1")){
+        switch (modo){
 
-            System.out.println("Introduce un año: ");
-            String anyo_nacimiento = teclado.next();
+            case "1":
+                System.out.println("Introduce un año: ");
+                String anyo_nacimiento = teclado.next();
 
-            try{
-                anyo_nac = Integer.parseInt(anyo_nacimiento);
-            }catch (NumberFormatException e){
-                System.out.println("Has introducido un formato erróneo. No es un número.");
+                try{
+                    anyo_nac = Integer.parseInt(anyo_nacimiento);
+                }catch (NumberFormatException e){
+                    System.out.println("Has introducido un formato erróneo. No es un número.");
 
-            }
+                }
 
-            if (anyo_nac<1900 || anyo_nac > anyo_actual){
-                System.out.println("El año introducido no es correcto.");
-                error = true;
-            }
+                if (anyo_nac<1900 || anyo_nac > anyo_actual){
+                    System.out.println("El año introducido no es correcto.");
+                    error = true;
+                }
+                break;
 
+            case "2":
+                int edad = 0;
 
-        } else if (modo.equals("2")) {
+                System.out.println("Introduce una edad: ");
 
-            int edad = 0;
+                if (teclado.hasNextInt()){
+                    edad = teclado.nextInt();
+                }else{
+                    System.out.println("La edad introducida no tiene un formato válido.");
+                }
 
-            System.out.println("Introduce una edad: ");
+                if (edad<0){
+                    System.out.println("La edad introducida no es válida.");
+                    error=true;
+                }else{
+                    anyo_nac = anyo_actual - edad;
+                }
+                break;
 
-            if (teclado.hasNextInt()){
-                edad = teclado.nextInt();
-            }else{
-                System.out.println("La edad introducida no tiene un formato válido.");
-            }
-
-            if (edad<0){
-                System.out.println("La edad introducida no es válida.");
-                error=true;
-            }else{
-                anyo_nac = anyo_actual - edad;
-            }
-
-        }else{
-
-            System.out.println("El modo introducido no es correcto.");
+            default:
+                System.out.println("El modo introducido no es correcto.");
+                break;
 
         }
+
+
+//        if (modo.equals("1")){
+//
+//            System.out.println("Introduce un año: ");
+//            String anyo_nacimiento = teclado.next();
+//
+//            try{
+//                anyo_nac = Integer.parseInt(anyo_nacimiento);
+//            }catch (NumberFormatException e){
+//                System.out.println("Has introducido un formato erróneo. No es un número.");
+//
+//            }
+//
+//            if (anyo_nac<1900 || anyo_nac > anyo_actual){
+//                System.out.println("El año introducido no es correcto.");
+//                error = true;
+//            }
+//
+//
+//        } else if (modo.equals("2")) {
+//
+//            int edad = 0;
+//
+//            System.out.println("Introduce una edad: ");
+//
+//            if (teclado.hasNextInt()){
+//                edad = teclado.nextInt();
+//            }else{
+//                System.out.println("La edad introducida no tiene un formato válido.");
+//            }
+//
+//            if (edad<0){
+//                System.out.println("La edad introducida no es válida.");
+//                error=true;
+//            }else{
+//                anyo_nac = anyo_actual - edad;
+//            }
+//
+//        }else{
+//
+//            System.out.println("El modo introducido no es correcto.");
+//
+//        }
 
         if (error==false){
             if (anyo_nac>= 1900 && anyo_nac<=1927){

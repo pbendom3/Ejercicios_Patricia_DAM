@@ -29,9 +29,12 @@ public class Main {
 
 //        Actividad_excepciones excepciones = new Actividad_excepciones();
 //        excepciones.excepciones();
+//
+//        Excepciones excepciones = new Excepciones();
+//        excepciones.actividad();
 
-        Excepciones excepciones = new Excepciones();
-        excepciones.actividad();
+        Bucles bucles = new Bucles();
+        bucles.ejercicio2();
 
     }
 }
