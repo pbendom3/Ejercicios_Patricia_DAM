@@ -96,6 +96,16 @@ public class Ejercicios {
         System.out.println("número..." + numero);
     }
 
+    public void prueba(){
+
+        Scanner teclado = new Scanner(System.in);
+        String palabra = teclado.next();
+
+        palabra = palabra.substring(15,20);
+
+
+    }
+
 
 
 }

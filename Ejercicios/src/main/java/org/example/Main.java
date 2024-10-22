@@ -1,5 +1,8 @@
 package org.example;
 
+import java.util.Arrays;
+import java.util.Random;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -30,11 +33,21 @@ public class Main {
 //        Actividad_excepciones excepciones = new Actividad_excepciones();
 //        excepciones.excepciones();
 //
-//        Excepciones excepciones = new Excepciones();
-//        excepciones.actividad();
+////        Excepciones excepciones = new Excepciones();
+////        excepciones.actividad();
+//
+//        Bucles bucles = new Bucles();
+//        bucles.ejercicio2();
 
-        Bucles bucles = new Bucles();
-        bucles.ejercicio2();
+//        Ejercicios ejercicios = new Ejercicios();
+//        ejercicios.prueba();
+
+
+
+
+
 
     }
+
+
 }
