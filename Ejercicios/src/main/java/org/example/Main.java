@@ -14,7 +14,8 @@ public class Main {
        // Ejercicios ejercicios = new Ejercicios();
        // ejercicios.ejercicio2();
         //ejercicios.ejemplo_trycatch();
-       // Operadores operadores = new Operadores();
+//        Operadores operadores = new Operadores();
+//        operadores.correc();
 
         //operadores.operadores();
         //operadores.asignacion();
@@ -42,7 +43,8 @@ public class Main {
 //        Ejercicios ejercicios = new Ejercicios();
 //        ejercicios.prueba();
 
-
+Vectores vectores = new Vectores();
+vectores.ejercicio1();
 
 
 
