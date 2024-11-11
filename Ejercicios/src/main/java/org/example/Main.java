@@ -44,7 +44,7 @@ public class Main {
 //        ejercicios.prueba();
 
 Vectores vectores = new Vectores();
-vectores.ejercicio5();
+vectores.ruleta();
 
 
 
