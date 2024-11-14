@@ -340,6 +340,114 @@ public class Vectores {
 
     }
 
+    public void ordenacion(){
+
+        int vector[] = {7,8,1,4,6};
+
+        int numero = 11;
+
+        int posicion = Arrays.binarySearch(vector,numero);
+        System.out.println(posicion);
+
+        Arrays.sort(vector);
+
+        System.out.println(Arrays.toString(vector));
+
+
+        posicion = Arrays.binarySearch(vector,numero);
+        System.out.println(posicion);
+
+
+    }
+
+    public void duplicados1(){
+
+        int original[] = {1,1,2,2,3,4,8,9};
+        System.out.println(Arrays.toString(original));
+
+        int auxiliar[] = new int[original.length];
+        int auxiliar2[] = new int[original.length];
+
+        for (int i=0;i<original.length;i++){
+            if (i != original.length-1 && original[i] == original[i+1]){
+                    continue;
+                }else{
+                    auxiliar[i] = original[i];
+                }
+            }
+
+        System.out.println(Arrays.toString(auxiliar));
+
+        int tam = 0;
+
+        for (int i = 0; i < original.length; i++) {
+
+            if (i!=0  && original[i]==original[i-1]){
+                continue;
+            }else{
+                auxiliar2[i] = original[i];
+                tam++;
+            }
+
+        }
+        System.out.println(Arrays.toString(auxiliar2));
+
+        int sin_duplicados[] = new int[tam];
+        int pos = 0;
+
+        for (int i = 0; i < auxiliar2.length; i++) {
+
+            if(auxiliar2[i]!=0){
+                sin_duplicados[pos] = auxiliar2[i];
+                pos++;
+            }
+
+        }
+
+        System.out.println(Arrays.toString(sin_duplicados));
+
+
+        }
+
+    public void duplicados2(){
+
+        int original[] = {1,1,2,2,3,4,9,9};
+        System.out.println(Arrays.toString(original));
+
+        int tam = 0;
+
+        for (int i=0;i<original.length;i++){
+            if (i != original.length-1 && original[i] == original[i+1]){
+                original[i]=0;
+            }else{
+                tam++;
+            }
+        }
+
+        System.out.println(Arrays.toString(original));
+
+        int sin_duplicados[] =  new int[tam];
+        int pos = 0;
+
+        System.out.println(Arrays.toString(sin_duplicados));
+
+        for (int i = 0; i < original.length; i++) {
+
+            if (original[i]!=0){
+                sin_duplicados[pos] = original[i];
+                pos++;
+            }
+
+        }
+
+        System.out.println(Arrays.toString(sin_duplicados));
+
+
+
+    }
+
+
+    }
 
 
 
@@ -348,4 +456,14 @@ public class Vectores {
 
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
