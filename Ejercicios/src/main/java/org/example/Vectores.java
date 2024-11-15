@@ -446,6 +446,62 @@ public class Vectores {
 
     }
 
+    public void duplicados3(){
+
+        int sorteo[] = new int[6];
+        Random aleatorio =  new Random();
+
+        for (int i = 0; i < sorteo.length; i++) {
+
+            sorteo[i] = aleatorio.nextInt(49)+1;
+
+        }
+
+        System.out.println(Arrays.toString(sorteo));
+
+        Arrays.sort(sorteo);
+        System.out.println(Arrays.toString(sorteo));
+
+        boolean ordenados_duplicados = true;
+
+        while(ordenados_duplicados){
+            ordenados_duplicados = false;
+
+            for (int i = 0; i < sorteo.length; i++) {
+
+                if(i!=sorteo.length-1 && sorteo[i]==sorteo[i+1]){
+                    System.out.println("Duplicado: " + sorteo[i]);
+                    System.out.println(Arrays.toString(sorteo));
+                    sorteo[i] = aleatorio.nextInt(49)+1;
+                    ordenados_duplicados = true;
+                }
+
+            }
+
+            Arrays.sort(sorteo);
+
+        }
+
+        System.out.println(Arrays.toString(sorteo));
+
+
+
+
+    }
+
+    public void prueba_distinct(){
+
+        int original[] = {1,1,2,2,3,4,9,9};
+
+        System.out.println(Arrays.toString(original));
+
+        int limpio[] = Arrays.stream(original).distinct().toArray();
+
+        System.out.println(Arrays.toString(limpio));
+
+
+    }
+
 
     }
 
