@@ -43,9 +43,11 @@ public class Main {
 //        Ejercicios ejercicios = new Ejercicios();
 //        ejercicios.prueba();
 
-Vectores vectores = new Vectores();
-vectores.prueba_distinct();
+//Vectores vectores = new Vectores();
+//vectores.primos();
 
+        Matrices matrices = new Matrices();
+        matrices.prueba3();
 
 
 
