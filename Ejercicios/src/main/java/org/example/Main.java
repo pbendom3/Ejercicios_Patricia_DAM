@@ -47,7 +47,7 @@ public class Main {
 //vectores.primos();
 
         Matrices matrices = new Matrices();
-        matrices.prueba3();
+        matrices.prueba_vectores();
 
 
 
