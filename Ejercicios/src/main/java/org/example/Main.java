@@ -1,5 +1,7 @@
 package org.example;
 
+import Prueba.Prueba2;
+
 import java.util.Arrays;
 import java.util.Random;
 
@@ -45,9 +47,12 @@ public class Main {
 
 //Vectores vectores = new Vectores();
 //vectores.primos();
+//
+//        Bingo bingo = new Bingo();
+//        bingo.bingo();
 
-        Matrices matrices = new Matrices();
-        matrices.prueba_vectores();
+        //int grados = 17;
+        Metodos.prueba_mismaclase();
 
 
 
