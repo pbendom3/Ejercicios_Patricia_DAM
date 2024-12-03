@@ -81,59 +81,59 @@ public class Bingo {
 
     }
 
-    public void bingo2(){
-
-
-
-
-
-
-
-
-
-        boolean haybingo = true;
-        bingo:
-        for (int i = 0; i < carton.length; i++) {
-            for (int j = 0; j < carton[i].length; j++) {
-
-                if(!Arrays.asList(sorteo).contains(carton[i][j])){
-                    haybingo=false;
-                    break bingo;
-                }
-            }
-        }
-
-        if(haybingo){
-            System.out.println("HAY BINGO!!");
-           // return;
-        }else{
-            System.out.println("NO HAY BINGO!!");
-
-            linea:
-            for (int i = 0; i < carton.length; i++) {
-
-                for (int j = 0; j < carton[i].length; j++) {
-
-                    if(!Arrays.asList(sorteo).contains(carton[i][j])){
-                        System.out.println("Línea " + (i+1) + ": NO TIENE PREMIO.");
-                        continue linea;
-                    }
-
-                }
-
-                System.out.println("Línea " + (i+1) + ": CORRECTA!!");
-
-            }
-
-
-        }
-
-
-
-
-
-
-    }
+//    public void bingo2(){
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//        boolean haybingo = true;
+//        bingo:
+//        for (int i = 0; i < carton.length; i++) {
+//            for (int j = 0; j < carton[i].length; j++) {
+//
+//                if(!Arrays.asList(sorteo).contains(carton[i][j])){
+//                    haybingo=false;
+//                    break bingo;
+//                }
+//            }
+//        }
+//
+//        if(haybingo){
+//            System.out.println("HAY BINGO!!");
+//           // return;
+//        }else{
+//            System.out.println("NO HAY BINGO!!");
+//
+//            linea:
+//            for (int i = 0; i < carton.length; i++) {
+//
+//                for (int j = 0; j < carton[i].length; j++) {
+//
+//                    if(!Arrays.asList(sorteo).contains(carton[i][j])){
+//                        System.out.println("Línea " + (i+1) + ": NO TIENE PREMIO.");
+//                        continue linea;
+//                    }
+//
+//                }
+//
+//                System.out.println("Línea " + (i+1) + ": CORRECTA!!");
+//
+//            }
+//
+//
+//        }
+//
+//
+//
+//
+//
+//
+//    }
 
 
 
