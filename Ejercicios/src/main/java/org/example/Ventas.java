@@ -2,6 +2,11 @@ package org.example;
 
 import java.util.Scanner;
 
+/**
+ * @author Patricia
+ * @version 1.0 (10/12/2024)
+ *
+ */
 public class Ventas {
 
     static Scanner teclado ;
@@ -23,6 +28,11 @@ public class Ventas {
         }
     } // casoDePrueba
 
+    /**
+     * Metodo para rellenar un vector que contega los datos introducidos
+     * @param dato se recibe un número para poder completar la entrada de datos
+     * @return datos[] devolvemos un array con los datos de entrada
+     */
     public static float[] rellenarDatos(float dato){
 
         float datos[] = new float[6];
