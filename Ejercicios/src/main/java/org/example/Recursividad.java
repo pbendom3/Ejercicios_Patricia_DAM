@@ -2,22 +2,31 @@ package org.example;
 
 public class Recursividad {
 
-    static int maximo = 10;
+    static int max;
+
     public static void main (String[] args){
 
-        int sec = 1;
-        imprimirNumeros(sec);
-
+        int temp = 0;
+        int num = sumar(temp);
+        System.out.println(num);
     }
 
     public static void imprimirNumeros(int sec){
         System.out.println(sec);
-        if (maximo > sec) {
-            imprimirNumeros(sec+1);
-        }
-
-
-
-
+//        if (maximo > sec) {
+//            imprimirNumeros(sec+1);
+//        }
     }
+
+    public static int sumar(int numero){
+
+        if(max < 10){
+            max++;
+            numero += sumar(max);
+        }
+        return numero;
+    }
+
+
+
 }
