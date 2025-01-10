@@ -2,6 +2,7 @@ package org.example;
 
 import Prueba.Prueba2;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.concurrent.Callable;
@@ -9,7 +10,7 @@ import java.util.concurrent.Callable;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, InterruptedException {
 
 //            Actividad_inicial actividad_inicial = new Actividad_inicial();
 //            actividad_inicial.ejecutar();
@@ -53,9 +54,9 @@ public class Main {
 //        bingo.bingo();
 
         //int grados = 17;
-        EjemploVarargs.principal();
-
-
+        System.out.println("holaaaaa");
+        ClearScreenExample2.borrar();
+        System.out.println("holaaaaa");
 
     }
 
