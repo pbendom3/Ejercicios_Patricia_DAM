@@ -1,13 +1,24 @@
 package org.example;
 
+import java.util.Arrays;
+
 public class Recursividad {
 
     static int max;
+    static char palabra_vector[];
 
     public static void main (String[] args){
 
-        int num = 123456;
-        numeros_invertidos(num);
+        String palabra = "aaaAAA";
+        palabra_vector = palabra.toLowerCase().toCharArray();
+        System.out.println(Arrays.toString(palabra_vector));
+        invertir_palabra(palabra_vector.length-1);
+
+        if(palabraOrdenada(0)){
+            System.out.println("La palabra está ordenada");
+        }else{
+            System.out.println("Palabra desordenada.");
+        };
 
     }
 
@@ -57,6 +68,29 @@ public class Recursividad {
 
     }
 
+    public static void invertir_palabra(int contador){ //contador=posición
+
+        if(contador==0){
+            System.out.println(palabra_vector[contador]);
+        }else{
+            System.out.print(palabra_vector[contador]);
+            invertir_palabra(contador-1); //--contador
+        }
+
+    }
+
+    public static boolean palabraOrdenada(int posicion){
+
+        if (posicion<palabra_vector.length-1){
+            if(palabra_vector[posicion]<=palabra_vector[posicion+1]){
+                return palabraOrdenada(++posicion);
+            }else{
+                return false;
+            }
+        }
+
+        return true;
+    }
 
 
 }
